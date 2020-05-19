@@ -1,0 +1,47 @@
+@import "../general/variables";
+
+.header__text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 115px;
+
+    h2 {
+        color: $primaryColor;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 42px;
+        line-height: 49px;
+    }
+
+    p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #84888C;
+        padding-right: 51px;
+    }
+    a{
+        background: $secondaryColor;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        width: 256px;
+        height: 49.16px;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .header__text-info{
+        padding-top: 9.74px;
+        color: $secondaryColor;
+    }
+}
