@@ -1,0 +1,49 @@
+@import '../general/variables';
+
+.cta__container{
+    background-color: $secondaryColor;
+    border-radius: 15px;
+    margin-top: 135px;
+    display: flex;
+    align-items: center;
+}
+.cta__text{
+    padding-left: 190px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h2{
+        color: #fff;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+    }
+    a{
+        background-color: $primaryColor;
+        border-radius: 5px;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 256px;
+        color: #fff;
+        font-weight: bold;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+.cta__image{
+    position: relative;
+    img{
+        position: absolute;
+        width: 547px;
+        height: 642px;
+        bottom: -245px;
+    }
+}
