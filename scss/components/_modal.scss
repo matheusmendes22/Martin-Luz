@@ -64,6 +64,9 @@
         line-height: 26px;
         color: $gray;
     }
+    a{
+        display: none;
+    }
 }
 
 @media(min-width:978px) {
@@ -72,6 +75,25 @@
     }
     .modal__text p{
         padding-right: 131px;
+    }
+}
+@media(max-width:978px){
+    .modal__block{
+        height: 189.79px;
+        margin-top: 30px;
+    }
+    .modal__text{
+        margin-top: 40px;
+        a{
+            display: block;
+            color: $secondaryColor;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
 }
 

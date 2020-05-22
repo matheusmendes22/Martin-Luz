@@ -1,0 +1,28 @@
+@import "../general/variables";
+
+.feedback__container{
+    margin-top: 50px;
+}
+.feedback__block{
+    display: flex;
+    justify-content: space-around;
+    h2{
+        font-weight: 500;
+        font-size: 32px;
+        line-height:44px;
+        color:$tertiaryColor ;
+    }
+}
+.feddback__icon-block{
+    a{
+        margin: 0 7px;
+    }
+}
+@media(max-width:978px){
+    .feedback__block{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 608px;
+    }
+}

@@ -45,3 +45,22 @@
         color: $secondaryColor;
     }
 }
+@media(max-width:978px){
+    .header__text-block{
+        padding-top: 20px;
+        h2{
+            font-size: 32px;
+            line-height: 37px;
+            font-weight: bold;
+        }
+        strong{
+            font-weight: normal;
+        }
+        a{
+            width: 90%;
+        }
+        .header__text-info{
+            text-align: center;
+        }
+    }
+}

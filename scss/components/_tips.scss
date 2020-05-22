@@ -1,4 +1,4 @@
-.tips__container{
+.tips__container {
     margin-top: 80px;
     background: #F6F9FC;
     border-radius: 15px;
@@ -6,29 +6,98 @@
     flex-direction: column;
     align-items: center;
 }
-.tips__text{
+
+.tips__text {
     text-align: center;
     padding-top: 80px;
-    h2{
+
+    h2 {
         color: $primaryColor;
         font-size: 32px;
         line-height: 44px;
     }
-    p{
+
+    p {
         color: $gray;
         font-size: 16px;
         line-height: 28px;
     }
 }
-.tips-icons__container{
+
+.tips-icons__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 89px;
+    padding:46px 112px;
 }
-.tips__block{
+
+.tips__block {
+    text-align: center;
+    width: 30%;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    img{
+        margin-bottom: 50px;
+    }
+}
+.tips__block-text{
     display: flex;
     justify-content: center;
-    text-align: center;
     flex-direction: column;
+    align-items: center;
+    h2 {
+        color: $tertiaryColor;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        width: 312px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 26px;
+        color: $gray;
+        min-height: 199px;
+    }
+}
+.tips__carousel{
+    display: none;
+}
+@media(max-width:978px){
+    .tips-icons__container{
+        display: none;
+    }
+    .tips__carousel{
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+        .tips__block{
+            width: 100%;
+            padding: 0 54px;
+            overflow-x: hidden;
+        }
+    }
+    .tips__block-text{
+        padding-bottom: 0;
+        p{
+            min-height: 210px;
+        }
+    }
+    .carousel-indicators{
+        padding-bottom: 56px;
+        li{
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background: rgba(4, 31, 143, 0.25);
+            padding: 0;
+            border-top: unset;
+            border-bottom: unset;
+        }
+        .active{
+            background: $primaryColor;
+        }
+    }
 }

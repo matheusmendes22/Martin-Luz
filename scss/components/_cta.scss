@@ -47,3 +47,24 @@
         bottom: -245px;
     }
 }
+@media(max-width:978px){
+    .cta__container{
+        margin-top: 41px;
+        border-radius: 0;
+    }
+    .cta__text{
+        padding-left: 24px;
+        padding-bottom: 24px;
+        a{
+            background-color: unset;
+        }
+    }
+    .cta__image{
+        img{
+            position: relative;
+            width: unset;
+            height: unset;
+            bottom: unset;
+        }
+    }
+}
